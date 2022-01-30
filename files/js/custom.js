@@ -1,34 +1,17 @@
-﻿/*=============================================================
- Authour URI: www.binarytheme.com
- License: Commons Attribution 3.0
-
- http://creativecommons.org/licenses/by/3.0/
-
- 100% Free To use For Personal And Commercial Use.
- IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-
- ========================================================  */
+﻿
 
 (function ($) {
     "use strict";
     var mainApp = {
         scrollAnimation_fun: function () {
 
-            /*====================================
-             ON SCROLL ANIMATION SCRIPTS 
-             ======================================*/
-
-
             window.scrollReveal = new scrollReveal();
 
         },
         scroll_fun: function () {
 
-            /*====================================
-             EASING PLUGIN SCRIPTS 
-             ======================================*/
             $(function () {
-                $('.move-me a').bind('click', function (event) { //just pass move-me in design and start scrolling
+                $('.move-me a').bind('click', function (event) {
                     var $anchor = $(this);
                     $('html, body').stop().animate({
                         scrollTop: $($anchor.attr('href')).offset().top
@@ -40,22 +23,18 @@
         },
 
         top_flex_slider_fun: function () {
-            /*====================================
-             FLEX SLIDER SCRIPTS 
-             ======================================*/
+   
             $('#main-section').flexslider({
-                animation: "fade", //String: Select your animation type, "fade" or "slide"
-                slideshowSpeed: 3000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-                animationSpeed: 1000,           //Integer: Set the speed of animations, in milliseconds
-                startAt: 0,    //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+                animation: "fade", 
+                slideshowSpeed: 3000,     
+                animationSpeed: 1000,     
+                startAt: 0,    
 
             });
         },
 
         custom_fun: function () {
-            /*====================================
-             WRITE YOUR   SCRIPTS  BELOW
-             ======================================*/
+     
 
 
         },

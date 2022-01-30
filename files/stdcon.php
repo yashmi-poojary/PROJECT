@@ -5,7 +5,7 @@
 	
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','Timetable_generator');
+	$conn = new mysqli('localhost','root','','ttms');
 	if(!$conn){
 		
 		die("Connection Failed : ".mysqli_error($con));

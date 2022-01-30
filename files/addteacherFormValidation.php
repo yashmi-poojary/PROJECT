@@ -6,8 +6,7 @@ if (isset($_POST['TN']) && isset($_POST['TF']) && isset($_POST['TD']) && isset($
     $facno = $_POST['TF'];
     $designation = $_POST['TD'];
     $alias = $_POST['AL'];
-    //  $message = "nTry again.";
-    // echo "<script type='text/javascript'>alert('$message');</script>";
+
 } else {
     $message = "dead.";
     echo "<script type='text/javascript'>alert('$message');</script>";
@@ -31,13 +30,13 @@ for ($i = 0; $i < 6; $i++) {
     mysqli_query(mysqli_connect("localhost", "root", "", "ttms"), $sql);
 }
 if ($q) {
-    $message = "Teavher added.\\nTry again.";
+    $message = "Teacher added.\\nTry again.";
     echo "<script type='text/javascript'>alert('$message');</script>";
     header("Location:addteachers.php");
 } else {
     $message = "Username and/or Password incorrect.\\nTry again.";
     echo "<script type='text/javascript'>alert('$message');</script>";
-    // header("Location:index.php");
+
 
 }
 

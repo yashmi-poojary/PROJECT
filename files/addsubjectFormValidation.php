@@ -6,8 +6,7 @@ if (isset($_POST['SN']) && isset($_POST['SC']) && isset($_POST['SS'])) {
     $code = $_POST['SC'];
     $sem = $_POST['SS'];
     $course = $_POST['ST'];
-    //  $message = "nTry again.";
-    // echo "<script type='text/javascript'>alert('$message');</script>"
+
 } else {
     $message = "dead.";
     echo "<script type='text/javascript'>alert('$message');</script>";
@@ -21,7 +20,6 @@ if ($q) {
 } else {
     $message = "Username and/or Password incorrect.\\nTry again.";
     echo "<script type='text/javascript'>alert('$message');</script>";
-    // header("Location:index.php");
 
 }
 ?>

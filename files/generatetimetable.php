@@ -15,15 +15,10 @@ if (isset($_GET['success'])) {
     <title>ADMIN ACCESS</title>
     <script type="text/javascript" src="assets/jsPDF/dist/jspdf.min.js"></script>
     <script type="text/javascript" src="assets/js/html2canvas.js"></script>
-    <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <!-- FONT AWESOME CSS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-    <!-- FLEXSLIDER CSS -->
     <link href="assets/css/flexslider.css" rel="stylesheet"/>
-    <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet"/>
-    <!-- Google	Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'/>
 </head>
 <body>
@@ -310,15 +305,10 @@ if (isset($_GET['success'])) {
 
 
 <script src="assets/js/jquery-1.10.2.js"></script>
-<!--  Core Bootstrap Script -->
 <script src="assets/js/bootstrap.js"></script>
-<!--  Flexslider Scripts -->
 <script src="assets/js/jquery.flexslider.js"></script>
-<!--  Scrolling Reveal Script -->
 <script src="assets/js/scrollReveal.js"></script>
-<!--  Scroll Scripts -->
 <script src="assets/js/jquery.easing.min.js"></script>
-<!--  Custom Scripts -->
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

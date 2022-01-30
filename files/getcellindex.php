@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: MSaqib
- * Date: 22-11-2016
- * Time: 19:40
- */
+
 session_start();
 $class = $_GET["i"];
 $str = "<option selected disabled>Select</option>";

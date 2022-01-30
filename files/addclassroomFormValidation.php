@@ -3,8 +3,6 @@
 include 'connection.php';
 if (isset($_POST['CN'])) {
     $name = $_POST['CN'];
-    //  $message = "nTry again.";
-    // echo "<script type='text/javascript'>alert('$message');</script>";
 } else {
     $message = "dead.";
     echo "<script type='text/javascript'>alert('$message');</script>";
@@ -18,7 +16,7 @@ if ($q) {
 } else {
     $message = "Username and/or Password incorrect.\\nTry again.";
     echo "<script type='text/javascript'>alert('$message');</script>";
-    // header("Location:index.html");
+
 
 }
 ?>

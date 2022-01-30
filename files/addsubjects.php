@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>ADMIN ACCESS</title>
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <!-- FONT AWESOME CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-    <!-- FLEXSLIDER CSS -->
-    <link href="assets/css/flexslider.css" rel="stylesheet"/>
-    <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
-    <!-- Google	Fonts -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/flexslider.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'/>
 </head>
 <body>
@@ -52,13 +47,12 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">LOGOUT</a></li>
+                <li><a href="main.html">LOGOUT</a></li>
             </ul>
 
         </div>
     </div>
 </div>
-<!--NAVBAR SECTION END-->
 <br>
 
 
@@ -69,14 +63,12 @@
 
 <div id="myModal" class="modal">
 
-    <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
             <span class="close">&times</span>
             <h2 id="popupHead">Add Subject</h2>
         </div>
         <div class="modal-body" id="EnterSubject">
-            <!--Admin Login Form-->
             <div style="display:none" id="addSubjectForm">
                 <form action="addsubjectFormValidation.php" method="POST">
                     <div class="form-group">
@@ -123,36 +115,26 @@
 </div>
 
 <script>
-    // Get the modal
     var modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
     var addsubjectBtn = document.getElementById("subjectmanual");
     var heading = document.getElementById("popupHead");
     var subjectForm = document.getElementById("addSubjectForm");
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal
 
     addsubjectBtn.onclick = function () {
         modal.style.display = "block";
-        //heading.innerHTML = "Faculty Login";
         subjectForm.style.display = "block";
-        //adminForm.style.display = "none";
 
 
     }
 
-            // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
-        //adminForm.style.display = "none";
         subjectForm.style.display = "none";
 
     }
 
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -189,7 +171,6 @@
             var rows = table.getElementsByTagName("tr");
             for (i = 0; i < rows.length; i++) {
                 var currentRow = table.rows[i];
-                //var b = currentRow.getElementsByTagName("td")[0];
                 var createDeleteHandler =
                     function (row) {
                         return function () {
@@ -204,7 +185,7 @@
                         };
                     };
 
-                currentRow.cells[5].onclick = createDeleteHandler(currentRow);
+                currentRow.cells[4].onclick = createDeleteHandler(currentRow);
             }
         }
     </script>
@@ -233,24 +214,14 @@
         ?>
     </table>
 </div>
-<!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
---></div>
-<!-- FOOTER SECTION END-->
 
-<!--  Jquery Core Script -->
-<script src="assets/js/jquery-1.10.2.js"></script>
-<!--  Core Bootstrap Script -->
-<script src="assets/js/bootstrap.js"></script>
-<!--  Flexslider Scripts -->
-<script src="assets/js/jquery.flexslider.js"></script>
-<!--  Scrolling Reveal Script -->
-<script src="assets/js/scrollReveal.js"></script>
-<!--  Scroll Scripts -->
-<script src="assets/js/jquery.easing.min.js"></script>
-<!--  Custom Scripts -->
-<script src="assets/js/custom.js"></script>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

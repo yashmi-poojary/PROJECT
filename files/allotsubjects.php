@@ -6,15 +6,10 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>ADMIN ACCESS</title>
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <!-- FONT AWESOME CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-    <!-- FLEXSLIDER CSS -->
-    <link href="assets/css/flexslider.css" rel="stylesheet"/>
-    <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
-    <!-- Google	Fonts -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/flexslider.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'/>
 </head>
 <body>
@@ -192,24 +187,12 @@
 </table>
 
 
-<!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
--->
-<!-- FOOTER SECTION END-->
-
-<!--  Jquery Core Script -->
-<script src="assets/js/jquery-1.10.2.js"></script>
-<!--  Core Bootstrap Script -->
-<script src="assets/js/bootstrap.js"></script>
-<!--  Flexslider Scripts -->
-<script src="assets/js/jquery.flexslider.js"></script>
-<!--  Scrolling Reveal Script -->
-<script src="assets/js/scrollReveal.js"></script>
-<!--  Scroll Scripts -->
-<script src="assets/js/jquery.easing.min.js"></script>
-<!--  Custom Scripts -->
-<script src="assets/js/custom.js"></script>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
